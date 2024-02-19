@@ -15,7 +15,7 @@ from ast import List
 
 
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def two_sum(self, nums: List[int], target: int) -> List[int]:
         # not used
         # LEN = len(nums)
         num_to_idx = {}
