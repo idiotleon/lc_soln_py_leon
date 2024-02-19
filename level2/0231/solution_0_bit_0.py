@@ -12,7 +12,7 @@
 
 
 class Solution:
-    def isPowerOfTwo(self, n: int) -> bool:
+    def is_power_of_two(self, n: int) -> bool:
         if n == 0:
             return False
         return n & (-n) == n
