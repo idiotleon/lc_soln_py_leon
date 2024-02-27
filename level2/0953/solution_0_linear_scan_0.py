@@ -15,7 +15,7 @@ from ast import List
 
 
 class Solution:
-    def isAlienSorted(self, words: List[str], order: str) -> bool:
+    def is_alien_sorted(self, words: List[str], order: str) -> bool:
         LEN_WORDS = len(words)
         self.ch_to_idx = {ch: idx for idx, ch in enumerate(order)}
         for idx in range(LEN_WORDS - 1):
