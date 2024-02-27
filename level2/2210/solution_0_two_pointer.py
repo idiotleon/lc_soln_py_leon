@@ -15,7 +15,7 @@ from ast import List
 
 
 class Solution:
-    def countHillValley(self, nums: List[int]) -> int:
+    def count_hill_valley(self, nums: List[int]) -> int:
         LEN = len(nums)
         last = nums[0]
         count = 0
