@@ -14,7 +14,7 @@ from util.linkedlist.linkedlist_node import ListNode
 
 
 class Solution:
-    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+    def remove_nth_from_end(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
         dummy = ListNode(-1)
         dummy.next = head
         lo, hi = dummy, dummy
