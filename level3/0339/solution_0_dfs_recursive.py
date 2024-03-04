@@ -14,7 +14,7 @@ from util.other.NestedInteger import NestedInteger
 
 
 class Solution:
-    def depthSum(self, nested_list: List[NestedInteger]) -> int:
+    def depth_sum(self, nested_list: List[NestedInteger]) -> int:
         return self.dfs(nested_list, 1)
 
     def dfs(self, nested_list: List[NestedInteger], depth: int) -> int:
