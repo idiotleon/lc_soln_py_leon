@@ -15,7 +15,7 @@ from ast import List
 
 
 class Solution:
-    def partitionLabels(self, s: str) -> List[int]:
+    def partition_labels(self, s: str) -> List[int]:
         # not used
         # LEN = len(s)
         last_indices: List[int] = [0] * 26
