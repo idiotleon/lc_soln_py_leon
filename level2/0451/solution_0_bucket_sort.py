@@ -1,8 +1,8 @@
 """
     https://leetcode.com/problems/sort-characters-by-frequency/
 
-    Time Complexity:    O(`max_freq`)
-    Space Complexity:   O(`max_freq`)
+    Time Complexity:    O(`max_freq`) ~ O(`LEN`)
+    Space Complexity:   O(`max_freq`) ~ O(`LEN`)
 
     @author: Leon
 """
@@ -12,19 +12,19 @@ import collections
 
 class Solution:
     def frequencySort(self, s: str) -> str:
-        if not s:
-            return s
+        # not used
+        # LEN = len(s)
 
-        ch_to_freqs = collections.Counter(s)
-        max_freq = max(ch_to_freqs.values())
+        ch_to_freq = collections.Counter(s)
+        max_freq = max(ch_to_freq.values())
 
-        buckets = [[] for _ in range(max_freq + 1)]
-        for ch, freq in ch_to_freqs.items():
+        buckets = [[] for _ in range(1 + max_freq)]
+        for ch, freq in ch_to_freq.items():
             buckets[freq].append(ch)
 
         builder = []
-        for i in range(len(buckets) - 1, 0, -1):
-            for ch in buckets[i]:
-                builder.append(ch * i)
+        for idx in range(len(buckets) - 1, 0, -1):
+            for ch in buckets[idx]:
+                builder.append(ch * idx)
 
         return "".join(builder)
