@@ -11,7 +11,7 @@ import collections
 
 
 class Solution:
-    def frequencySort(self, s: str) -> str:
+    def frequency_sort(self, s: str) -> str:
         # not used
         # LEN = len(s)
 

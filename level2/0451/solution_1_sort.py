@@ -12,7 +12,7 @@ from ast import List
 
 
 class Solution:
-    def frequencySort(self, s: str) -> str:
+    def frequency_sort(self, s: str) -> str:
         if not s:
             return ""
 

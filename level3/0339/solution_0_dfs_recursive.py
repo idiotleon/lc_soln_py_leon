@@ -10,7 +10,7 @@
 
 from ast import List
 
-from util.other.NestedInteger import NestedInteger
+from util.other.nested_integer import NestedInteger
 
 
 class Solution:
