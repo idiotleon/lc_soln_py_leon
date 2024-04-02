@@ -26,6 +26,7 @@ class Solution:
             if nums[idx] > 0:
                 nums[idx] *= -1
             else:
+                # or ans.append(abs(num))
                 ans.append(idx + 1)
 
         return ans
